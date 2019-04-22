@@ -319,8 +319,8 @@ def long_name_steals_a_ton?
         data.each do |players, stats|
           stats.each do |k, v|
             if k == :steals
-              if temp_points < v
-                temp_points = v
+              if temp_steals < v
+                temp_steals = v
                 temp_name = players
               end
             end
